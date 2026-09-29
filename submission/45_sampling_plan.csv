@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,25,coverage,"Baseline cho camera trước: đường thẳng, ban ngày, mật độ vừa; đủ để đo độ ổn định nhãn ở vùng center/mid."
+front,hard,35,small_far_objects+edge_distortion,"Vật nhỏ ở xa và người/xe cắt ngang ở rìa vòng kính; cảnh đông ven đường có rider/ThreeWheeler (lỗi L và M thấy ở ADASIND). Chọn theo cảnh, frame liền nhau cùng cảnh chỉ tính một ca."
+rear,normal,20,coverage,Baseline lùi/đỗ xe ban ngày; tình huống lặp lại nhiều nên cần ít frame hơn.
+rear,hard,30,near_occlusion+ego_body,Vật rất gần cản sau bị ego_body và vành kính cắt; đêm/ngược sáng đèn xe sau. Frame liền nhau trong cùng lần lùi xe chỉ tính một ca.
+left,normal,18,coverage,Baseline camera hông trái khi chạy thẳng; phần lớn khung là lề/xe song song.
+left,hard,27,seam+truncation,"Vùng seam với front/rear ở góc xe (cùng vật hai camera, chọn theo cặp timestamp); xe máy chở 2 người song song sát hông dễ bị tách rider."
+right,normal,18,coverage,"Baseline camera hông phải, cân xứng với left để so sánh hai bên."
+right,hard,27,seam+curb_parking,"Seam góc xe và đỗ sát lề: người đứng trước cửa hàng trên nền tối, cụm xe đỗ cần crowd_or_group, vạch ô đỗ cong ở rìa. Nhiều frame liền nhau cùng cảnh không tính là nhiều ca độc lập."

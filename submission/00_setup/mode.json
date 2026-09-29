@@ -1,0 +1,17 @@
+{
+  "members": [
+    "Nguyen-Van-Thanh-Long"
+  ],
+  "assignments": {
+    "Nguyen-Van-Thanh-Long": "B4-mid"
+  },
+  "self": "Nguyen-Van-Thanh-Long",
+  "slice": "B4-mid",
+  "degrade": [],
+  "current_slice": "B4-mid",
+  "support_prefill": false,
+  "support_slice": "",
+  "prefill_box_ids": [
+    "adasind_249480.jpg:1"
+  ]
+}
